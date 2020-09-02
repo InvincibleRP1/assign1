@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> The Kitabwala || Online Book Store </title>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@800&display=swap" rel="stylesheet">
+</head>
+
+<style>
+    * {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    body {
+        background: url("bg.jpg");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+
+    }
+
+    .left {
+        position: absolute;
+        left: 19px;
+        top: 8px;
+        padding: 2px 1px;
+        text-align: center;
+        background-color: darkolivegreen;
+        border: 2px solid black;
+        border-radius: 20px;
+        font-size: 35px;
+        font-family: 'Baloo Bhai 2', cursive;
+        width: 16%;
+    }
+
+
+
+    .right {
+        position: fixed;
+        right: 20px;
+        top: 15px;
+        padding: 8px 10px;
+        background-color: darkolivegreen;
+        border: 2px solid black;
+        border-radius: 15px;
+    }
+
+    .navibar li {
+        display: inline-block;
+    }
+
+    .navibar li a {
+        color: black;
+        text-decoration: none;
+        padding: 10px 8px;
+        font-family: 'Baloo Bhai 2', cursive;
+    }
+
+    .navibar li a:hover {
+        text-decoration: underline;
+        color: bisque;
+    }
+
+    .midpart {
+        margin: 100px 25px;
+        padding: 50px 24px;
+        text-align: center;
+        font-family: 'Baloo Bhai 2', cursive;
+    }
+
+    .btn {
+        border-radius: 10px;
+        font-family: 'Lobster', cursive;
+        background-color: rgb(42, 165, 58);
+    }
+
+    .btn:hover {
+        text-decoration: solid;
+        color: white;
+        background: coral;
+        cursor: pointer;
+    }
+
+    .formstyle {
+
+        width: 400px;
+        height: 100vh;
+        margin: auto;
+        border-radius: 5px;
+
+    }
+
+    input {
+        padding: 2px;
+        margin: 1px;
+    }
+
+    input:focus {
+        background-color: gray;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    label {
+        font-weight: bold;
+    }
+
+    .rd {
+        font-style: italic;
+    }
+</style>
+
+<body>
+    <header class="header">
+        <div class="left">
+            <img src="logo.png" width=70px>
+            <div>The Kitabwala</div>
+
+        </div>
+
+        <div class="right">
+            <ul class="navibar">
+                <li> <a href="#">Home</a></li>
+                <li><a href="#">My Orders</a></li>
+                <li><a href="#">Bookshelf</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact us</a></li>
+            </ul>
+        </div>
+
+    </header>
+    <div class="midpart">
+
+        <h1><em>Welcome to INDIA's finest online book store...!</em></h1><br><br>
+
+        <fieldset>
+            <div class="formstyle">
+                <form action="Details.js" method="">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name"><br>
+
+                    <label for="email">Email-Id:</label>
+                    <input type="email" id="email"><br>
+
+                    <label for="birth">Date Of Birth:</label>
+                    <input type="date" name="" id="birth"><br>
+
+                    <label for="mobile">Mobile Number:</label>
+                    <input type="text" placeholder="Mobile Number should contain numbers only" id="mobile"><br>
+
+                    <label for="pass">Password:</label>
+                    <input type="password" id="pass"><br>
+
+                    <label for="">Occupation:</label><br>
+                    <div class="rd">
+                        <input type="radio" id="Wp" name="Occupation">
+                        <label for="Wp">Working Professional</label><br>
+
+                        <input type="radio" id="Stu" name="Occupation">
+                        <label for="Stu">Student</label><br>
+
+                        <input type="radio" id="oth" name="Occupation">
+                        <label for="oth">Others</label><br>
+                    </div>
+                    <br>
+                    <button class="btn"><b>Register</b></button><br>
+                    <button class="btn"><b>Already have an account? Log In!</b></button>
+
+                </form>
+        </fieldset>
+    </div>
+    </div>
+
+</body>
+
+</html>
