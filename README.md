@@ -1,3 +1,3 @@
 # assign1
 
-Homepage of a Bookstore Website..
+Web pages of a bookstore website..
